@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="showValues()">
+    <main class="main">
+        <header class="cabecalho">
+            <h1 class="titulo">Lista de Tarefas | PH</h1>
+        </header>
+        <section class="add-item">
+            <input type="text" id="inpItem" placeholder="Digite sua nova task">
+            <button id="btnAdd" title="Clique para adicionar task" onclick="addItem()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                  </svg>
+            </button>
+        </section>
+        <section class="body-itens">
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+</body>
+</html>
